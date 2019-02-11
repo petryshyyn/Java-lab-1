@@ -2,7 +2,7 @@ package com.company;
 
 public class CreditСard
 {
-    private long number;
+    private long Number;
     private String CardType;
     private String CurrencyType;
     private double PaymentCommission;
