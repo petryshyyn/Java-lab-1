@@ -5,15 +5,15 @@ public class Main
     public static void main(String[] args)
     {
         System.out.println(CreditСard.ExpirationDate);
-        CreditСard FirstСard = new CreditСard();
-        CreditСard SecondCard = new CreditСard(4141485933331111L,"Viza",556,"AlfaBank");
-        CreditСard ThirdCard = new CreditСard(5678414141412314L,"American Express","Hryvnia",1.5f, "Ivanov", 2022, 221, "Privat24");
-        System.out.println("First Card" + "\n" + FirstСard.toString());
-        System.out.println(FirstСard.printStaticExpirationDate() +"\n");
-        System.out.println("Second Card" + "\n" + SecondCard.toString());
-        System.out.println(SecondCard.printStaticExpirationDate() +"\n");
-        System.out.println("Third Card" + "\n" + ThirdCard.toString());
-        System.out.println(ThirdCard.printStaticExpirationDate() + "\n");
+        CreditСard firstСard = new CreditСard();
+        CreditСard secondCard = new CreditСard(4141485933331111L,"Viza",556,"AlfaBank");
+        CreditСard thirdCard = new CreditСard(5678414141412314L,"American Express","Hryvnia",1.5f, "Ivanov", 2022, 221, "Privat24");
+        System.out.println("First Card" + "\n" + firstСard.toString());
+        System.out.println(firstСard.printStaticExpirationDate() +"\n");
+        System.out.println("Second Card" + "\n" + secondCard.toString());
+        System.out.println(secondCard.printStaticExpirationDate() +"\n");
+        System.out.println("Third Card" + "\n" + thirdCard.toString());
+        System.out.println(thirdCard.printStaticExpirationDate() + "\n");
 
         System.out.println("");
         Scanner input = new Scanner(System.in);
@@ -34,8 +34,8 @@ public class Main
         System.out.print("Enter card name: ");
         String newCardName = input.nextLine();
 
-        FirstСard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
-        SecondCard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
-        ThirdCard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
+        firstСard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
+        secondCard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
+        thirdCard.resetValues(newNumber, newCardType, newCurrencyType, newPaymentCommission, newCardHolder, newExpirationDate, newCVC, newCardName);
     }
 }
